@@ -1,0 +1,23 @@
+name: fetch reviews
+on:
+  schedule:
+    - cron:  '00 12 * * *'
+  
+jobs:
+  fetch-reviews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Fetch reviews
+        run: make run/all
+      - name: Update json responses
+        run: |
+          git config --global user.name 'appbot'
+          git config --global user.email 'actions-user@users.noreply.github.com'
+          git add response/*
+          git diff-index --quiet HEAD || git commit -m "chore: updating review responses"
+          git push
