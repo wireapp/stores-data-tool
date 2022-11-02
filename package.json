@@ -1,0 +1,22 @@
+{
+  "name": "appstores-data-tool",
+  "version": "1.0.0",
+  "description": "get data from google play store and apple app store",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wireapp/appstores-data-tool"
+  },
+  "keywords": [],
+  "author": "Wire",
+  "homepage": "https://github.com/wireapp/appstores-data-tool",
+  "dependencies": {
+    "google-play-scraper": "^9.1.1",
+    "app-store-scraper": "^0.17.0"
+  },
+  "devDependencies": {
+    "google-play-scraper": "^9.1.1",
+    "app-store-scraper": "^0.17.0"
+  }
+}
