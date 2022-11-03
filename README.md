@@ -1,6 +1,6 @@
 # Wire™
 
-Tool to allow us to get some periodically data from stores and persist it locally as json files for later post processing of grafana dashboards.
+Tool to allow us to get periodically, some data from stores and persist it locally as json files for later post processing of grafana dashboards.
 
 ## Usage
 
