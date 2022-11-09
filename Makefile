@@ -1,7 +1,13 @@
-run/all: run/fetch-android run/fetch-ios
+run/all: android/fetch-reviews ios/fetch-reviews android/fetch-ratings ios/fetch-ratings
 
-run/fetch-android:
-	node lib/wire-reviews-android.js > response/reviews-android.json
+android/fetch-reviews:
+	node lib/android-reviews.js > response/reviews-android.json
 
-run/fetch-ios:
-	node lib/wire-reviews-ios.js > response/reviews-ios.json
+ios/fetch-reviews:
+	node lib/ios-reviews.js > response/reviews-ios.json
+
+android/fetch-ratings:
+	node lib/android-ratings.js > response/ratings-android.json
+
+ios/fetch-ratings:
+	node lib/ios-ratings.js > response/ratings-ios.json
