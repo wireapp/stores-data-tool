@@ -1,3 +1,1 @@
-TypeError: stringify is not a function
-    at file:///home/runner/work/stores-data-tool/stores-data-tool/lib/ios-ratings.js:7:17
-    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+{"histogram":{"1":266,"2":55,"3":60,"4":92,"5":217},"ratings":690}
