@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "get data from google play store and apple app store",
   "main": "index.js",
+  "type": "module",
   "scripts": {},
   "repository": {
     "type": "git",
