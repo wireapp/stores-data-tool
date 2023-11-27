@@ -4,7 +4,9 @@
   "description": "get data from google play store and apple app store",
   "main": "index.js",
   "type": "module",
-  "scripts": {},
+  "scripts": {
+    "test": "mocha --timeout 5000"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/wireapp/appstores-data-tool"
@@ -13,14 +15,16 @@
   "author": "Wire",
   "homepage": "https://github.com/wireapp/appstores-data-tool",
   "dependencies": {
-    "app-store-scraper": "^0.17.0",
+    "app-store-scraper": "^0.18.0",
     "google-play-scraper": "^10.0.0",
     "json-normalize": "^1.1.2",
     "source-map-support": "^0.5.21"
   },
   "devDependencies": {
     "google-play-scraper": "^10.0.0",
-    "app-store-scraper": "^0.17.0",
-    "json-normalize": "^1.1.2"
+    "app-store-scraper": "^0.18.0",
+    "json-normalize": "^1.1.2",
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7"
   }
 }
