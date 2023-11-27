@@ -6,8 +6,6 @@ describe('iOS Reviews test', () => {
         return reviews.getReviews
             .then((app) => {
                 assert(true);
-            }).catch((error) => {
-                assert(false);
             });
     });
 });
