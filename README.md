@@ -8,6 +8,12 @@ To run reviews fetch for android and ios:
 
 `make run/all`
 
+## Test
+
+To run tests:
+
+`npm test`
+
 ## Thanks
 
 This project is based on the libraries:
