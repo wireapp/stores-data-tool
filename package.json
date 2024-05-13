@@ -25,6 +25,6 @@
     "app-store-scraper": "^0.18.0",
     "json-normalize": "^1.1.2",
     "mocha": "^10.4.0",
-    "chai": "^5.1.0"
+    "chai": "^5.1.1"
   }
 }
