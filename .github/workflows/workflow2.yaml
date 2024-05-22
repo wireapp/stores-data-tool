@@ -12,4 +12,4 @@ jobs:
         with:
           node-version: '16.x'
       - name: run hello world
-        run: echo "hello world from workflow 2"
+        run: echo "hello world from workflow 2 after merge to main"
