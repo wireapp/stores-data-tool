@@ -1,0 +1,19 @@
+name: upload
+on:
+    workflow_dispatch:
+    merge_group:
+    pull_request:
+        types: [ opened, synchronize, edited ]
+    workflow_call:
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '16.x'
+      - name: run hello world
+        run: echo "hello world from workflow 2"
