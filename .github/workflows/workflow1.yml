@@ -26,4 +26,4 @@ jobs:
       -   name: check current folder
           run: pwd && ls -la
       -   name: Upload APK staging compat
-          uses: .github/workflows/workflow2.yml
+          uses: ./.github/workflows/workflow2.yml
