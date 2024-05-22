@@ -19,5 +19,4 @@ jobs:
         run: echo "hello world"
 
   call_wf:
-    awsDeploy:
-      uses: ./.github/workflows/workflow2.yaml
+    uses: ./.github/workflows/workflow2.yaml
