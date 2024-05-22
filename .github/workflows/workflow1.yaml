@@ -19,13 +19,5 @@ jobs:
         run: echo "hello world"
 
   call_wf:
-    runs-on: ubuntu-latest
-    needs: [checks]
-    steps:
-      -   uses: actions/checkout@v4
-      -   name: check current folder
-          run: pwd && ls -la
-      -   name: check workflows availables
-          run: ls -la ./.github/workflows/
-      -   name: Upload APK staging compat
-          uses: ./.github/workflows/workflow2.yaml
+    awsDeploy:
+      uses: ./.github/workflows/workflow2.yaml
