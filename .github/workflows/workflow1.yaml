@@ -19,4 +19,5 @@ jobs:
         run: echo "hello world"
 
   call_wf:
+    needs: [ checks ]
     uses: ./.github/workflows/workflow2.yaml
