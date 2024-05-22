@@ -28,4 +28,4 @@ jobs:
       -   name: check workflows availables
           run: ls -la ./.github/workflows/
       -   name: Upload APK staging compat
-          uses: ./.github/workflows/workflow2.yml@chore/workflows-test
+          uses: ./.github/workflows/workflow2.yaml
